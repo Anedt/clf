@@ -1,5 +1,16 @@
 ---
-console.log("singleview");
+
+const url = "https://qvuodamtpodvzhlumvwz.supabase.co/rest/v1/copenhagenLF";
+
+const data = await fetch(url, {
+  method: "GET",
+  headers: {
+    apikey:
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF2dW9kYW10cG9kdnpobHVtdnd6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTA0OTA3MDcsImV4cCI6MjAyNjA2NjcwN30.bQLajmGw_1NqVRaz-u5LRwtYAIOofxYROvvs9pZKlH8",
+  },
+}).then((r) => r.json());
+
+console.log("singleview")
 ---
 
 
@@ -14,7 +25,7 @@ console.log("singleview");
 	<body>
 		<main>
             <article>
-            <h4>01</h4> <h1>Du som er i himlene</h1>
+                <h1></h1>
             tilbake knapp
             
             <img src="" alt="">
