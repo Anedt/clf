@@ -1,11 +1,14 @@
 ---
-
+console.log("Event");
+//const response = await fetch("...");
+//const data = await response.json();
+const { Tittel, Av, Lokation } = Astro.props;
 ---
 
 <article>
-  <h1>tittel</h1>
-  <p>hvornår</p>
-  <p>hvor</p>
+  <h1>{Tittel}</h1>
+  <p>{Av}</p>
+  <p>{Lokation}</p>
   <img />
 </article>
 
@@ -13,6 +16,5 @@
   .grid {
     display: grid;
     grid-template-columns: (3, 1fr);
-    padding: ;
   }
 </style>

@@ -2,15 +2,16 @@
 import Event from "../components/Event.astro";
 import Navigation from "../components/Navigation.astro";
 
-const url = "https://qvuodamtpodvzhlumvwz.supabase.co";
+const url = "https://qvuodamtpodvzhlumvwz.supabase.co/rest/v1/copenhagenLF";
 
-fetch(url, {
+const data = await fetch(url, {
   method: "GET",
   headers: {
     apikey:
       "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF2dW9kYW10cG9kdnpobHVtdnd6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTA0OTA3MDcsImV4cCI6MjAyNjA2NjcwN30.bQLajmGw_1NqVRaz-u5LRwtYAIOofxYROvvs9pZKlH8",
   },
-});
+}).then((r) => r.json());
+console.log("test", data);
 ---
 
 <html lang="en">
@@ -18,22 +19,21 @@ fetch(url, {
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>events</title>
   </head>
   <body>
     <Navigation />
     <h1>Astro</h1>
     <main>
-      <article>
-        <Event />
-      </article>
-      <article>
-        <Event />
-      </article>
-      <article>
-        <Event />
-      </article>
+      {
+        data.map((event) => (
+          <Event
+            Tittel={event.Tittel}
+            Av={event.Av}
+            Lokation={event.Lokation}
+          />
+        ))
+      }
     </main>
   </body>
 </html>
