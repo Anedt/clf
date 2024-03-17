@@ -1,5 +1,4 @@
 ---
-import Arrow from "../components/Arrow.astro":
 console.log("program");
 ---
 
@@ -17,17 +16,29 @@ console.log("program");
     <main>
         <h1>PROGRAM</h1>
         <h2>ALLE LYSVÆRKER OG EVENTS D.2.FEB 25.FEB 2024</h2>
-        <section class="propic">
+        <section class="grid_1-1">
+        <div class="propic">
             <img src="" alt="Lysværk">
-            <h3>LYSVÆRKER</h3>
-            <arrow />
-        </section>
-        <section class="propic">
-            <img src="" alt="Lysværk">
-            <h3>LYSVÆRKER</h3>
-            <arrow />
-        </section>
+            <a href=""><h3>LYSVÆRKER</h3></a>
+            <arrow /> <a href=""></a>
+        </div>
+        <div class="propic">
+            <img src="" alt="Events">
+            <a href="Events.astro"><h3>EVENTS</h3></a>
+            <arrow /> <a href="art.astro"></a>
+        </div>
+    </section>
     </main>
     <footer></footer>
 </body>
 </html>
+
+<style>
+
+.grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px;
+}
+</style>

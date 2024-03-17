@@ -25,23 +25,52 @@ console.log("singleview")
 	<body>
 		<main>
             <article>
-                <h1></h1>
+           
+           <h3></h3> Tittel=
             tilbake knapp
-            
-            <img src="" alt="">
+            <div class="grid_1-1">
+            <img src="" alt="kunst">
+            <div class="grid_1-1">
+                <div>
             <h5>Kunstner</h5>
             <p>Marie Nørgaard(DK)</p>
+                </div>
+                <div>
             <h5>Lys</h5>
             <p>Mani Nikdel</p>
+        </div>
+        <div>
             <h5>Lokation</h5>
             <p>Højbro Plads</p>
+        </div>
+        <div>
             <h5>Kontakt</h5>
             <p>Instagram: @marienoergaardnielsen</p> 
             <p>Instagram: @maninikdelstudio</p>
+        </div>
+        <div class="grid_1">
 <h5>Om værket</h5>
 <p>Marie Nørgaard har skabt en lysinstallation, der er inspireret af den danske salme "Du som er i himlene". Værket er en hyldest til det himmelske lys og til det lys, der er i os alle. Lysinstallationen er skabt i samarbeid med lysdesigner Mani Nikdel.</p>
+
+</div>
+</div>
+
+            </div>
 			</article>
 		</main>
 	</body>
 </html>
-
+<style>
+    .grid_1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+   
+    
+    .grid_1 {
+        display: grid;
+        grid-template-columns: -1/-1;
+        gap: 1rem;
+    }
+    </style>
