@@ -16,8 +16,12 @@ import Card_guidet from "../components/Card_guidet.astro";
       <h1>RUTER OG TURE</h1>
       <h3>VÆLG EN AF VORES GÅ- OG CYKELRUTER</h3>
       <section id="infomap">
-        <article id="info"></article>
-        <article id="map"></article>
+        <div id="info">
+          <p>ruter</p>
+          <p>blablba</p>
+          <p>vlalva</p>
+        </div>
+        <div id="google-map"></div>
       </section>
       <h2>GUIDEDE TURE 2024</h2>
       <h3>BOOK EN AF VORES GUIDEDE TURE</h3>
@@ -38,4 +42,9 @@ import Card_guidet from "../components/Card_guidet.astro";
       </section>
     </main>
   </body>
+  <script
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEZPr69oJ9-ugL5eBNro3I13i99dpoXuQ&callback=initMap"
+  ></script>
+  <script src="/main.js" is:inline></script>
 </html>
