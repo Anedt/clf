@@ -1,0 +1,76 @@
+---
+import Layout from "../../Layout.astro"
+// 
+
+
+export async function getStaticPaths() {
+    const data = await fetch("https://qvuodamtpodvzhlumvwz.supabase.co/rest/v1/copenhagenLF",
+    {
+  method: "GET",
+  headers: {
+    apikey:
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF2dW9kYW10cG9kdnpobHVtdnd6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTA0OTA3MDcsImV4cCI6MjAyNjA2NjcwN30.bQLajmGw_1NqVRaz-u5LRwtYAIOofxYROvvs9pZKlH8",
+  },
+}
+).then(response => response.json());
+
+    return data.map((verk) => {
+        return {
+            params: { id: verk.id },
+            props: { myData: verk }
+        };
+    });
+}
+
+const { myData } = Astro.props;
+console.log(myData);
+---
+
+<Layout title={myData.Tittel}>
+    <h1>{myData.Tittel}</h1>
+    <div class="grid_1-1">
+        <img src={myData.img} alt="kunst">
+        <div class="grid_1-1">
+            <div>
+        <h5>Kunstner</h5>
+        <p>{myData.Av}</p>
+            </div>
+            <div>
+        <h5>Lys</h5>
+        <p>{myData.Lys}</p>
+    </div>
+    <div>
+        <h5>Lokation</h5>
+        <p>{myData.Lokation}</p>
+    </div>
+    <div>
+        <h5>Kontakt</h5>
+        <p>{myData.Links}</p>
+    </div>
+    <div class="grid_1">
+<h5>Om værket</h5>
+<p>{myData.Info}</p>
+</div>
+</div> 
+</div>
+ </article>
+</Layout>
+
+<style>
+    .grid_1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    
+    .grid_1 {
+        display: grid;
+        grid-template-columns: -1/1;
+        gap: 1rem;
+    }
+
+    img {
+        width: 90%;
+        height: auto
+    }
+    </style>
