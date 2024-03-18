@@ -2,13 +2,14 @@
 const { variant, size } = Astro.props;
 ---
 
-<button>class={variant}<slot /></button>
+<button><slot/></button>
 
 <style>
   button {
     padding: 1rem;
   }
   .primary {
+  
   }
   .medium {
     font-size: 1rem;

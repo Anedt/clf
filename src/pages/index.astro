@@ -11,19 +11,34 @@ import Button from "../components/Button.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="/public/style.css" />
     <title>Index</title>
   </head>
   <body>
     <Navigation />
     <main>
       <h1>EN SÆRLIG LYSFEJRING I VINTERMØRKET</h1>
-      <h2>2/2 - 25/2 2024</h2>
-
-      <h1>EN SÆRLIG LYSFEJRING I VINTERMØRKET</h1>
-      <h2>2/2 - 25/2 2024</h2>
+      <h2 id="dato">2/2 - 25/2 2024</h2>
       <Button variant="primary" size="medium">SE PROGRAM</Button>
       <Button variant="primary" size="medium">RUTER OG TURE</Button>
-      <article></article>
+      <article>
+        <p>
+          En årligt tilbagevendende festival for lys, der transformerer det
+          stille og kolde vintermørke til en særlig fejring af lyskunst,
+          lysdesign og lysende oplevelser midt i København.
+        </p>
+      </article>
+      <div>
+        <Card />
+      </div>
     </main>
   </body>
 </html>
+
+<style>
+  h1 {
+    color: #fff8d2;
+    -webkit-text-stroke: 0.12rem;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
