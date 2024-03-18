@@ -22,17 +22,17 @@ p {
 }
 h1 {
   color: #fff8d2;
-  -webkit-text-stroke: 0.9rem;
+  -webkit-text-stroke: 0.1rem;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  font-family: Inter;
+  font-family: RobR;
   line-height: 2;
 }
 
 h2 {
   color: #fff8d2;
   text-align: center;
-  font-family: RobL;
+  font-family: RobR;
   line-height: 2;
 }
 p {
