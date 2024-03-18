@@ -1,4 +1,5 @@
 ---
+Export async getStaticPaths() {}
 
 const url = "https://qvuodamtpodvzhlumvwz.supabase.co/rest/v1/copenhagenLF";
 
@@ -11,6 +12,11 @@ const data = await fetch(url, {
 }).then((r) => r.json());
 
 console.log("singleview")
+
+return [
+    {params: {id: }}
+]
+
 ---
 
 
