@@ -1,8 +1,8 @@
 ---
-
+//her legger vi den overstående layouten som skal på alle sider typ altså header, footer, bakgrund etc
 ---
 
-//her legger vi den overstående layouten som skal på alle sider typ altså header, footer, bakgrund etc
+
 
 <html lang="en">
 	<head>
@@ -13,8 +13,13 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+        <header>
+            <nav>
+                <ul>
+                </ul>
+            </nav>
 		<main>
+            <slot />
 		</main>
 	</body>
     <style>
