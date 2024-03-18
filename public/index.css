@@ -43,3 +43,8 @@ p {
   color: #b2b8eb;
   text-align: center;
 }
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
