@@ -1,5 +1,6 @@
 ---
 import "../style/style.css";
+import Card_guidet from "../components/Card_guidet.astro";
 ---
 
 <html lang="da">
@@ -21,10 +22,19 @@ import "../style/style.css";
       <h2>GUIDEDE TURE 2024</h2>
       <h3>BOOK EN AF VORES GUIDEDE TURE</h3>
       <section>
-        <article>
-          <img src="billede" alt="" />
-          <p>Guidet tur til fods under Copenhagen Light Festival</p>
-        </article>
+        <Card_guidet text="Guidet tur til fods under Copenhagen Light Festival"
+          ><img src="xxx" alt="xxx" /></Card_guidet
+        >
+        <Card_guidet text="Guided BUS til alle distrikter af CLF"
+          ><img src="xxx" alt="xxx" /></Card_guidet
+        >
+        <Card_guidet text="Liveguidet kanalrundfart langs kunstværkerne"
+          ><img src="xxx" alt="xxx" /></Card_guidet
+        >
+        <Card_guidet
+          text="Guidet tur til fods med Frederik Lindskov og FOF Nordsjælland"
+          ><img src="xxx" alt="xxx" /></Card_guidet
+        >
       </section>
     </main>
   </body>
