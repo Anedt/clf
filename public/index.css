@@ -1,16 +1,15 @@
-
 .container {
-  width: 50%; 
-  height: 100%; 
-  position: relative; 
-  overflow: hidden; 
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .container img {
-  width: 200%; 
+  width: 200%;
   position: absolute;
-  left: -50%; 
-  top: 0; 
+  left: -50%;
+  top: 0;
 }
 
 
@@ -38,7 +37,7 @@ p {
 }
 h1 {
   color: #fff8d2;
-  -webkit-text-stroke: 0.1rem;
+  -webkit-text-stroke: 0.05rem;
   -webkit-text-fill-color: transparent;
   text-align: center;
   font-family: inter;
@@ -64,4 +63,3 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
