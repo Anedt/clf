@@ -11,7 +11,10 @@
   left: -50%;
   top: 0;
 }
-
+.Buttons {
+  margin: 0 auto;
+  width: fit-content;
+}
 @font-face {
   font-family: RobR;
   src: url(/FONT/Roboto-Regular.ttf);
