@@ -1,3 +1,19 @@
+
+.container {
+  width: 50%; 
+  height: 100%; 
+  position: relative; 
+  overflow: hidden; 
+}
+
+.container img {
+  width: 200%; 
+  position: absolute;
+  left: -50%; 
+  top: 0; 
+}
+
+
 @font-face {
   font-family: RobR;
   src: url(/FONT/Roboto-Regular.ttf);
@@ -48,3 +64,4 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
