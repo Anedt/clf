@@ -1,5 +1,6 @@
 ---
 import "../style/style.css";
+import "../style/index.css";
 import Card from "../components/Card.astro";
 import Navigation from "../components/Navigation.astro";
 import Button from "../components/Button.astro";
@@ -11,62 +12,63 @@ import Button from "../components/Button.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="stylesheet" href="../../public/style.css" />
-    <link rel="stylesheet" href="../../public/index.css" />
+
     <title>Index</title>
   </head>
   <body>
     <Navigation />
-    <main>
-      <div class="container"></div>
-      <h1>EN SÆRLIG LYSFEJRING I VINTERMØRKET</h1>
-      <h2 id="dato">2/2 - 25/2 2024</h2>
-      <div class="Buttons">
-        <a class="Button1" href=""></a>
-        <Button variant="primary" size="medium">SE PROGRAM</Button>
-        <a class="Button2" href=""></a>
-        <Button variant="primary" size="medium">RUTER OG TURE</Button>
-      </div>
-      <article>
-        <p>
-          En årligt tilbagevendende festival for lys, der transformerer det
-          stille og kolde vintermørke til en særlig fejring af lyskunst,
-          lysdesign og lysende oplevelser midt i København.
-        </p>
-      </article>
-      <section id="grid-1">
-        <div>
-          <img src="/IMG/kort.webp" />
-          <h2>Se årets program</h2>
-          <p>Udforsk årets lysværker og events</p>
-          <img class="pil" src="/IMG/pil.webp" alt="" />
+    <div class="singlecellgrid">
+      <img src="/IMG/baggrund.webp" />
+      <main>
+        <h1>EN SÆRLIG LYSFEJRING I VINTERMØRKET</h1>
+        <h2 id="dato">2/2 - 25/2 2024</h2>
+        <div class="Buttons">
+          <a class="Button1" href=""></a>
+          <Button variant="primary" size="medium">SE PROGRAM</Button>
+          <a class="Button2" href=""></a>
+          <Button variant="primary" size="medium">RUTER OG TURE</Button>
         </div>
-
-        <div>
-          <img src="/IMG/kunstværk.webp" />
-          <h2>Tjek vores rutevejledning</h2>
-          <p>Se nogle af vores gå-og cykelruter</p>
-          <img class="pil" src="/IMG/pil.webp" alt="" />
-        </div>
-
-        <div>
-          <img src="/IMG/kunst.webp" />
-          <h2>Book en guidet tour</h2>
-          <p>Oplev lysfestivalen på vores guidede ture</p>
-          <img class="pil" src="/IMG/pil.webp" alt="" />
-        </div>
-      </section>
-      <section>
-        <div class="knap2">
-          <Button variant="primary" size="medium">PARTNERE & SPONSORER </Button>
-        </div>
-        <div class="spons-img">
-          <img src="/IMG/spons.webp" alt="" />
-        </div>
-      </section>
+      </main>
+    </div>
+    <article>
+      <p>
+        En årligt tilbagevendende festival for lys, der transformerer det stille
+        og kolde vintermørke til en særlig fejring af lyskunst, lysdesign og
+        lysende oplevelser midt i København.
+      </p>
+    </article>
+    <section id="grid-1">
       <div>
-        <footer></footer>
+        <img src="/IMG/kort.webp" />
+        <h2>Se årets program</h2>
+        <p>Udforsk årets lysværker og events</p>
+        <img class="pil" src="/IMG/pil.webp" alt="" />
       </div>
-    </main>
+
+      <div>
+        <img src="/IMG/kunstværk.webp" />
+        <h2>Tjek vores rutevejledning</h2>
+        <p>Se nogle af vores gå-og cykelruter</p>
+        <img class="pil" src="/IMG/pil.webp" alt="" />
+      </div>
+
+      <div>
+        <img src="/IMG/kunst.webp" />
+        <h2>Book en guidet tour</h2>
+        <p>Oplev lysfestivalen på vores guidede ture</p>
+        <img class="pil" src="/IMG/pil.webp" alt="" />
+      </div>
+    </section>
+    <section>
+      <div class="knap2">
+        <Button variant="primary" size="medium">PARTNERE & SPONSORER </Button>
+      </div>
+      <div class="spons-img">
+        <img src="/IMG/spons.webp" alt="" />
+      </div>
+    </section>
+    <div>
+      <footer></footer>
+    </div>
   </body>
 </html>

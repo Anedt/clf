@@ -14,15 +14,27 @@ img {
   overflow: hidden;
 }
 
-body {
+/* body {
   background-image: url(/IMG/baggrund.webp);
+  position: relative;
 }
+body::before {
+  filter: grayscale(100%);
+} */
 
-.container img {
-  width: 200%;
-  position: absolute;
-  left: -50%;
-  top: 0;
+.singlecellgrid {
+  display: grid;
+}
+.singlecellgrid > * {
+  grid-column: 1;
+  grid-row: 1;
+}
+.singlecellgrid img {
+  max-width: 100%;
+  object-fit: cover;
+  filter: opacity(25%);
+  align-self: stretch;
+  justify-self: stretch;
 }
 .Buttons {
   margin: 0 auto;
