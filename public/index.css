@@ -3,11 +3,19 @@ img {
   max-height: 400px;
 }
 
+.pil {
+  max-width: 80px;
+}
+
 .container {
   width: 50%;
   height: 100%;
   position: relative;
   overflow: hidden;
+}
+
+body {
+  background-image: url(/IMG/baggrund.webp);
 }
 
 .container img {
