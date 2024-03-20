@@ -41,6 +41,10 @@ h3 {
 
 #info {
   border-color: antiquewhite;
+  border-style:double;
+  border-width:5px;
+  border-color: #fff8d2;
+  margin: 20px;
 }
 /*mapssidens google-maps-api*/
 #google-map {
@@ -62,4 +66,8 @@ h3 {
   font-weight: 300;
   margin-bottom: 10px;
   line-height: 16px;
+}
+
+.filter {
+  
 }
