@@ -1,6 +1,7 @@
 ---
 import Event from "../components/Event.astro";
 import Navigation from "../components/Navigation.astro";
+import "../style/style.css";
 
 const url = "https://qvuodamtpodvzhlumvwz.supabase.co/rest/v1/copenhagenLF";
 
@@ -31,6 +32,7 @@ console.log("test", data);
             Tittel={event.Tittel}
             Av={event.Av}
             Lokation={event.Lokation}
+            img={event.img}
           />
         ))
       }
