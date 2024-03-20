@@ -1,3 +1,41 @@
 body {
   background: #010d25;
+  display: flex;
+}
+
+h1 h2 {
+  color: #fff8d2;
+}
+
+
+
+/*ruter&ture*/
+#infomap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#info {
+  border-color: antiquewhite;
+}
+/*mapssidens google-maps-api*/
+#google-map {
+  border: 1px solid;
+  width: 500px;
+  height: 500px;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.clfinfo h3 {
+  color: #010d25;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 16px;
+}
+.clfinfo p {
+  color: #182178;
+  font-weight: 300;
+  margin-bottom: 10px;
+  line-height: 16px;
 }
