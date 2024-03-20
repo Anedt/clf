@@ -44,6 +44,7 @@ body::before {
 .Buttons {
   margin: 0 auto;
   width: fit-content;
+  padding: 20px;
 }
 
 .knap2 {
@@ -72,9 +73,11 @@ p {
   line-height: 2;
 }
 
-#dato {
+.dato {
   font-family: RobL;
   line-height: 2;
+  color: #b2b8eb;
+  text-align: center;
 }
 h1 {
   color: #fff8d2;
@@ -96,11 +99,10 @@ h2 {
 p {
   color: #fff8d2;
 }
+.grid-1 {
 
-#dato {
-  color: #b2b8eb;
-  text-align: center;
 }
+
 /* desktop */
 @media (min-width: 600px) {
   #grid-1 {

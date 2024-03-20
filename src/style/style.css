@@ -13,12 +13,10 @@
 
 body {
   background: #010d25;
-  display: flex;
 }
 
-
 h1 {
-  color:#fff8d2;
+  color: #fff8d2;
   -webkit-text-stroke: 0.05rem;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -31,7 +29,7 @@ h2 {
 }
 
 h3 {
-  color: #B2B8EB;
+  color: #b2b8eb;
 }
 
 /*events*/
