@@ -1,0 +1,22 @@
+---
+const { text } = Astro.props;
+---
+
+<article class="grid_1-1">
+  <p>{text}</p>
+  <img src="/public/toggle_off.svg" alt="" />
+</article>
+
+<style>
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    padding: 0;
+    margin: 0;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+</style>
