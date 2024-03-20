@@ -37,9 +37,11 @@ body::before {
 .singlecellgrid img {
   max-width: 100%;
   object-fit: cover;
-  filter: opacity(25%);
+  /* filter: opacity(25%); */
   align-self: stretch;
   justify-self: stretch;
+  z-index: -1;
+  opacity: 0.5;
 }
 .Buttons {
   margin: 0 auto;
@@ -99,10 +101,11 @@ h2 {
 p {
   color: #fff8d2;
 }
-.grid-1 {
-
+.body-index {
+  background: #010d25;
+  background-image: url(/public/IMG/baggrund2.webp);
+  background-size: 100%;
 }
-
 /* desktop */
 @media (min-width: 600px) {
   #grid-1 {
