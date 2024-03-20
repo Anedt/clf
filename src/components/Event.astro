@@ -6,9 +6,9 @@ const { Tittel, Av, Lokation, img } = Astro.props;
 ---
 
 <article>
-  <h1>{Tittel}</h1>
-  <p>{Av}</p>
-  <p>{Lokation}</p>
+  <h2>{Tittel}</h2>
+  <p>Av: {Av}</p>
+  <p>Hvor: {Lokation}</p>
   <p>{img}</p>
 </article>
 
@@ -16,5 +16,26 @@ const { Tittel, Av, Lokation, img } = Astro.props;
   .grid {
     display: grid;
     grid-template-columns: (3, 1fr 1fr 1fr);
+  }
+
+  h1 {
+    color: #fff8d2;
+    -webkit-text-stroke: 0.1rem;
+    -webkit-text-fill-color: transparent;
+    font-family: RobR;
+    line-height: 2;
+  }
+
+  h2 {
+    color: #fff8d2;
+    font-family: RobR;
+    line-height: 2;
+  }
+
+  p  {
+    color: #b2b8eb;
+    font-family: RobR;
+    line-
+    height: 2;
   }
 </style>
