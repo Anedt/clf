@@ -26,16 +26,21 @@ console.log("test", data);
     <Navigation />
     <h1>Program</h1>
     <main>
-      {
-        data.map((event) => (
-          <Event
-            Tittel={event.Tittel}
-            Av={event.Av}
-            Lokation={event.Lokation}
-            img={event.img}
-          />
-        ))
-      }
+      <div id="event">
+        {
+          data.map((event) => (
+            <>
+              <Event
+                img={event.img}
+                Tittel={event.Tittel}
+                Av={event.Av}
+                Lokation={event.Lokation}
+              />
+              <img class="pil" src="/IMG/pil.webp" alt="pil" />
+            </>
+          ))
+        }
+      </div>
     </main>
   </body>
 </html>

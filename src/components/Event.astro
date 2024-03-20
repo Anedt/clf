@@ -6,16 +6,16 @@ const { Tittel, Av, Lokation, img } = Astro.props;
 ---
 
 <article>
+  <p>{img}</p>
   <h2>{Tittel}</h2>
   <p>Av: {Av}</p>
   <p>Hvor: {Lokation}</p>
-  <p>{img}</p>
 </article>
 
 <style>
   .grid {
     display: grid;
-    grid-template-columns: (3, 1fr 1fr 1fr);
+    grid-template-columns: ( 1fr 1fr 1fr);
   }
 
   h1 {
