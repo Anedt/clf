@@ -13,7 +13,8 @@
 
 body {
   background: #010d25;
-  display: flex;
+  background-image:url(/public/img/baggrundimgab.webp);
+  background-size: 100%;
 }
 
 h1 {
@@ -37,6 +38,8 @@ h3 {
 #infomap {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
 
 #info {
@@ -46,6 +49,7 @@ h3 {
   border-color: #fff8d2;
   margin: 20px;
 }
+
 /*mapssidens google-maps-api*/
 #google-map {
   border: 1px solid;
@@ -68,6 +72,9 @@ h3 {
   line-height: 16px;
 }
 
-.filter {
-  
+#routes {
+  color: #fff8d2;
+  padding: 15px;
+  margin: 1px;
+
 }
