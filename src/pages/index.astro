@@ -22,12 +22,14 @@ import Footer from "../components/Footer.astro";
       <main>
         <Navigation />
         <h1>EN SÆRLIG LYSFEJRING I VINTERMØRKET</h1>
-        <h2 id="dato">2/2 - 25/2 2024</h2>
+        <h2 class="dato">2/2 - 25/2 2024</h2>
         <div class="Buttons">
-          <a class="Button1" href=""></a>
-          <Button variant="primary" size="medium">SE PROGRAM</Button>
-          <a class="Button2" href=""></a>
-          <Button variant="primary" size="medium">RUTER OG TURE</Button>
+          <a class="Button1" href="/program">
+            <Button variant="primary" size="medium">SE PROGRAM</Button>
+          </a>
+          <a class="Button2" href="/map">
+            <Button variant="primary" size="medium">RUTER OG TURE</Button>
+          </a>
         </div>
       </main>
     </div>
@@ -40,24 +42,26 @@ import Footer from "../components/Footer.astro";
     </article>
     <section id="grid-1">
       <div>
-        <img src="/IMG/kort.webp" />
+        <a href="/program"> <img src="/IMG/kort.webp" /></a>
         <h2>Se årets program</h2>
         <p>Udforsk årets lysværker og events</p>
-        <img class="pil" src="/IMG/pil.webp" alt="" />
+        <a href="/program"> <img class="pil" src="/IMG/pil.webp" alt="" /></a>
       </div>
 
       <div>
-        <img src="/IMG/kunstværk.webp" />
+        <a href="/map"> <img src="/IMG/kunstværk.webp" /></a>
         <h2>Tjek vores rutevejledning</h2>
         <p>Se nogle af vores gå-og cykelruter</p>
-        <img class="pil" src="/IMG/pil.webp" alt="" />
+        <a href="/map"> <img class="pil" src="/IMG/pil.webp" alt="" /></a>
       </div>
 
       <div>
-        <img src="/IMG/kunst.webp" />
+        <a href="/map"> <img src="/IMG/kunst.webp" /></a>
         <h2>Book en guidet tour</h2>
         <p>Oplev lysfestivalen på vores guidede ture</p>
-        <img class="pil" src="/IMG/pil.webp" alt="" />
+        <a href="/map">
+          <img class="pil" src="/IMG/pil.webp" alt="" />
+        </a>
       </div>
     </section>
     <section>

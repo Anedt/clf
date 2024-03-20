@@ -13,13 +13,13 @@
 
 body {
   background: #010d25;
-  display: flex;
+  background-image:url(/public/img/baggrundimgab.webp);
+  background-size: 100%;
 }
 
-
 h1 {
-  color:#fff8d2;
-  -webkit-text-stroke: 0.05rem;
+  color: #fff8d2;
+  -webkit-text-stroke: 0.02rem;
   -webkit-text-fill-color: transparent;
   text-align: center;
   font-family: RobR;
@@ -31,27 +31,34 @@ h2 {
 }
 
 h3 {
-  color: #B2B8EB;
+  color: #b2b8eb;
+  
 }
 
 /*events*/
 
-#event{
-padding: 50px;
-margin: 5px;
+#event
+{
+  padding: 50px;
+  margin: 5px;
 }
-
-
 
 /*ruter&ture*/
 #infomap {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
 
 #info {
   border-color: antiquewhite;
+  border-style:double;
+  border-width:5px;
+  border-color: #fff8d2;
+  margin: 20px;
 }
+
 /*mapssidens google-maps-api*/
 #google-map {
   border: 1px solid;
@@ -72,4 +79,11 @@ margin: 5px;
   font-weight: 300;
   margin-bottom: 10px;
   line-height: 16px;
+}
+
+#routes {
+  color: #fff8d2;
+  padding: 15px;
+  margin: 1px;
+
 }
