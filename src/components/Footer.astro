@@ -15,20 +15,42 @@
   <div>
     <p>
       <a href="https://www.facebook.com/cphlightfest/" target="_blank"
-        >Facebook</a
-      >
-    </p>
-    <p>
-      <a href="https://www.instagram.com/cphlightfest/" target="_blank"
-        >Instagram</a
-      >
+        ><div id="facebook_logo"></div>
+      </a>
+      <p>
+        <a href="https://www.instagram.com/cphlightfest/" target="_blank"
+          ><div id="instagram_logo"></div>
+        </a>
+      </p>
+
+      <style>
+        #footergrid {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        #instagram_logo {
+          background-image: url(/img/instagram_logo-kopi.webp);
+          aspect-ratio: 1/1;
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 1%;
+          position: absolute;
+          padding: 10px;
+          margin-left: 80px;
+        }
+
+        #facebook_logo {
+          background-image: url(/img/facebook_logo-kopi.webp);
+          aspect-ratio: 1/1;
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 1%;
+          position: absolute;
+          padding: 10px;
+          margin-left: 20px;
+        }
+      </style>
     </p>
   </div>
 </article>
-
-<style>
-  #footergrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-</style>
