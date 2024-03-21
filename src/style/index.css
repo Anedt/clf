@@ -30,14 +30,6 @@ img {
   text-align: left;
 }
 
-/* body {
-  background-image: url(/img/baggrund.webp);
-  position: relative;
-}
-body::before {
-  filter: grayscale(100%);
-} */
-
 .singlecellgrid {
   display: grid;
 }
@@ -48,7 +40,6 @@ body::before {
 .singlecellgrid img {
   max-width: 100%;
   object-fit: cover;
-  /* filter: opacity(25%); */
   align-self: stretch;
   justify-self: stretch;
   z-index: -1;
@@ -80,6 +71,7 @@ body::before {
   color: #b2b8eb;
   text-align: center;
 }
+
 h1 {
   text-align: center;
 }
