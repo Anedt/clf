@@ -1,28 +1,30 @@
 ---
 //her legger vi den overstående layouten som skal på alle sider typ altså header, footer, bakgrund etc
+import Navigation from "./components/Navigation.astro";
+import Footer from "./components/Footer.astro";
+import "./style/style.css";
 ---
 
-
-
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-        <header>
-            <nav>
-                <ul>
-                </ul>
-            </nav>
-		<main>
-            <slot />
-		</main>
-	</body>
-    <style>
-        
-    </style>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <header>
+      <Navigation />
+      <nav>
+        <ul></ul>
+      </nav>
+      <main>
+        <slot />
+      </main>
+    </header>
+    <footer><Footer /></footer>
+    <style></style>
+    <script src="/main.js" is:inline></script>
+  </body>
 </html>

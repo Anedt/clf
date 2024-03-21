@@ -2,6 +2,7 @@
 import Event from "../components/Event.astro";
 import Navigation from "../components/Navigation.astro";
 import "../style/style.css";
+import Footer from "../components/Footer.astro";
 
 const url = "https://qvuodamtpodvzhlumvwz.supabase.co/rest/v1/copenhagenLF";
 
@@ -42,5 +43,7 @@ console.log("test", data);
         }
       </div>
     </main>
+    <Footer />
+    <script src="/main.js" is:inline></script>
   </body>
 </html>

@@ -19,8 +19,8 @@ import Footer from "../components/Footer.astro";
   <body class="body-index">
     <div class="singlecellgrid">
       <img src="/img/baggrund.webp" />
+      <Navigation />
       <main>
-        <Navigation />
         <h1>EN SÆRLIG LYSFEJRING I VINTERMØRKET</h1>
         <h2 class="dato">2/2 - 25/2 2024</h2>
         <div class="Buttons">
@@ -33,7 +33,7 @@ import Footer from "../components/Footer.astro";
         </div>
       </main>
     </div>
-    <article>
+    <article class="containerp">
       <p class="pt">
         En årligt tilbagevendende festival for lys, der transformerer det stille
         og kolde vintermørke til en særlig fejring af lyskunst, lysdesign og
@@ -43,21 +43,21 @@ import Footer from "../components/Footer.astro";
     <section id="grid-1">
       <div>
         <a href="/program"> <img src="/img/kort.webp" /></a>
-        <h2>Se årets program</h2>
+        <h4>Se årets program</h4>
         <p>Udforsk årets lysværker og events</p>
         <a href="/program"> <img class="pil" src="/img/pil.webp" alt="" /></a>
       </div>
 
       <div>
         <a href="/map"> <img src="/img/kunstværk.webp" /></a>
-        <h2>Tjek vores rutevejledning</h2>
+        <h4>Tjek vores rutevejledning</h4>
         <p>Se nogle af vores gå-og cykelruter</p>
         <a href="/map"> <img class="pil" src="/img/pil.webp" alt="" /></a>
       </div>
 
       <div>
         <a href="/map"> <img src="/img/kunst.webp" /></a>
-        <h2>Book en guidet tour</h2>
+        <h4>Book en guidet tour</h4>
         <p>Oplev lysfestivalen på vores guidede ture</p>
         <a href="/map">
           <img class="pil" src="/img/pil.webp" alt="" />
@@ -72,10 +72,9 @@ import Footer from "../components/Footer.astro";
         <img src="/img/spons-img.webp" alt="" />
       </div>
     </section>
-    <div>
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+    <footer>
+      <Footer />
+    </footer>
+    <script src="/main.js" is:inline></script>
   </body>
 </html>

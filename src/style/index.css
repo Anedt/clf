@@ -17,10 +17,17 @@ img {
   position: relative;
   overflow: hidden;
 }
+
+.containerp {
+  display: flex;
+  justify-content: center;
+  margin: 70px;
+}
+
 .pt {
+  font-size: 20px;
+  max-width: 600px; 
   text-align: left;
-  margin: 20px;
-  padding: 20px;
 }
 
 /* body {
@@ -81,25 +88,19 @@ h1 {
   background: #010d25;
   background-image: url(/public/img/baggrund2.webp);
   background-size: 100%;
-
 }
 /* desktop */
 @media (min-width: 600px) {
   #grid-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 140px;
+    padding-top: 30px;
   }
   main {
     padding: 30px;
   }
 
-  .pt {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: left;
-    width: fit-content;
-    margin: 20px auto;
-  }
   h1 {
     margin: 80px;
     font-size: 40px;

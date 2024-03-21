@@ -2,4 +2,110 @@
 
 ---
 
-<nav><a href="">Helo</a> <a href="">Header</a></nav>
+<div><a href="/index"><img src="/img/clf_logo.webp" alt="" /></a></div>
+<nav id="navigation">
+  <div id="udenmenu">
+    <p>2/2-25/2 2024</p>
+    <a href=""><p>English</p></a>
+  </div>
+  <div id="menu-toggle">
+    <img id="menu_icon" src="img/burger-menu.svg" alt="burgermenu ikon" />
+  </div>
+  <ul>
+    <li><a href="/program"><p>PROGRAM 2024</p></a></li>
+    <li><a href="/map"><p>OPLEV FESTIVALEN</p></a></li>
+    <li><a href="/index"><p>INFO</p></a></li>
+    <li><a href="/index"><p>OM OS</p></a></li>
+  </ul>
+</nav>
+
+<style>
+  #udenmenu {
+    display: flex;
+    gap: 40px;
+    margin-right: 80px;
+    margin-top: 14px;
+  }
+  ul p {
+    margin: 40px;
+    color: #010927;
+    font-family: RobR;
+  }
+
+  ul p:hover {
+    color: #ab56c3;
+    text-indent: 5px;
+    transition: color 0.3s ease;
+    transition: text-indent 0.3s ease-in-out;
+  }
+  nav {
+    padding: 10px;
+  }
+  #navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 2em;
+  }
+  div img {
+    opacity: 100%;
+    width: 130px;
+    position: fixed;
+  }
+  #navigation img {
+    width: 30px;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  nav a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  #menu-toggle {
+    z-index: 1001;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    justify-self: end;
+    margin: 0;
+    padding: 0;
+    top: 4.2%;
+    left: 96%;
+  }
+  #menu-toggle:hover {
+    opacity: 50%;
+  }
+  #menu-toggle.darken img {
+    filter: invert(1);
+  }
+
+  #navigation ul {
+    display: none;
+  }
+
+  #navigation.active ul {
+    text-align: start;
+    background-color: #fff8d2;
+    background-image: url(/public/img/menubaggrund.svg);
+    width: 300px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-top: 0;
+    margin-right: 0;
+    padding-top: 40px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+  }
+</style>

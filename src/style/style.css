@@ -53,10 +53,18 @@ h3 {
   margin-top: 0;
 }
 
+h4 {
+  color: #fff8d2; 
+  margin-top: 0;
+  font-family: RobL;
+  font-size: 25px;
+  margin-top: 0;
+}
+
 p {
   color: #fff8d2;
   font-family: RobL;
-  line-height: 2;
+  margin: 0;
 
 }
 
