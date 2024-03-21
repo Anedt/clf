@@ -2,17 +2,18 @@
 
 ---
 
+<hr />
 <article id="footergrid">
   <div>
-    <p>@COPENHAGEN LIGHT FESTIVAL</p>
+    <p id="clf">@COPENHAGEN LIGHT FESTIVAL</p>
   </div>
   <div id="grid-1-1-1-1">
     <p>FAQ</p>
-    <p>PRESSE OG MEDIER</p>
+    <p>PRESSE & MEDIER</p>
     <p>KONTAKT</p>
-    <p>NYHETSBREV</p>
+    <p>NYHEDSBREV</p>
   </div>
-  <div>
+  <div id="socialemedier">
     <p>
       <a href="https://www.facebook.com/cphlightfest/" target="_blank"
         ><div id="facebook_logo"></div>
@@ -22,40 +23,75 @@
           ><div id="instagram_logo"></div>
         </a>
       </p>
-
-      <style>
-        #footergrid {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-        }
-
-        #grid-1-1-1-1 {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-
-        #instagram_logo {
-          background-image: url(/img/instagram_logo-kopi.webp);
-          aspect-ratio: 1/1;
-          background-size: cover;
-          background-repeat: no-repeat;
-          width: 1%;
-          position: absolute;
-          padding: 10px;
-          margin-left: 80px;
-        }
-
-        #facebook_logo {
-          background-image: url(/img/facebook_logo-kopi.webp);
-          aspect-ratio: 1/1;
-          background-size: cover;
-          background-repeat: no-repeat;
-          width: 1%;
-          position: absolute;
-          padding: 10px;
-          margin-left: 20px;
-        }
-      </style>
     </p>
   </div>
 </article>
+
+<style>
+  hr {
+    margin-bottom: 20px;
+    margin-top: 50px;
+    border: none;
+    width: 90%;
+    height: 0.5px;
+    background: linear-gradient(
+      to right,
+      #00186c,
+      #ab56c3,
+      #fc383d,
+      #8662f8,
+      #182178,
+      #00b4b7
+    );
+  }
+  p {
+    font-size: 10px;
+    color: #f2f4ff;
+    padding: 0;
+    margin: 0;
+  }
+
+  #footergrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    justify-self: center;
+  }
+
+  #grid-1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    padding: 0;
+    margin: 0;
+    justify-self: center;
+    justify-items: center;
+  }
+
+  #instagram_logo {
+    background-image: url(/img/instagram_logo-kopi.webp);
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    margin: 10px;
+    margin-right: 10px;
+  }
+
+  #facebook_logo {
+    background-image: url(/img/facebook_logo-kopi.webp);
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    margin: 10px;
+    margin-right: 10px;
+  }
+
+  #socialemedier {
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+  }
+</style>

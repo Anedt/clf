@@ -51,12 +51,18 @@ body::before {
 
 .knap2 {
   margin: 0 auto;
+  margin-top: 100px;
   width: fit-content;
 }
 .spons-img {
   margin: 0 auto;
   width: fit-content;
 }
+
+.spons_img img {
+  width: 100%
+}
+
 @font-face {
   font-family: RobR;
   src: url(/FONT/Roboto-Regular.ttf);
