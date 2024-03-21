@@ -2,6 +2,7 @@
 import "../style/style.css";
 import Card_guidet from "../components/Card_guidet.astro";
 import Rute from "../components/Rute.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="da">
@@ -10,7 +11,7 @@ import Rute from "../components/Rute.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Index</title>
+    <title>Ruter og Ture</title>
   </head>
   <body>
     <main>
@@ -40,22 +41,38 @@ import Rute from "../components/Rute.astro";
       </section>
       <h2>GUIDEDE TURE 2024</h2>
       <h3>BOOK EN AF VORES GUIDEDE TURE</h3>
-      <section>
+      <section class="gridguide">
         <Card_guidet text="Guidet tur til fods under Copenhagen Light Festival"
-          ><img src="xxx" alt="xxx" /></Card_guidet
+          ><img src="/public/img/kunst.webp" alt="xxx" /></Card_guidet
         >
         <Card_guidet text="Guided BUS til alle distrikter af CLF"
-          ><img src="xxx" alt="xxx" /></Card_guidet
+          ><img src="/public/img/kunst.webp" alt="xxx" /></Card_guidet
         >
         <Card_guidet text="Liveguidet kanalrundfart langs kunstværkerne"
-          ><img src="xxx" alt="xxx" /></Card_guidet
+          ><img src="/public/img/kunst.webp" alt="xxx" /></Card_guidet
         >
         <Card_guidet
           text="Guidet tur til fods med Frederik Lindskov og FOF Nordsjælland"
-          ><img src="xxx" alt="xxx" /></Card_guidet
+          ><img src="/public/img/kunst.webp" alt="xxx" /></Card_guidet
+        >
+        <Card_guidet text="Guidet tur til fods under Copenhagen Light Festival"
+          ><img src="/public/img/kunst.webp" alt="xxx" /></Card_guidet
+        >
+        <Card_guidet text="Guided BUS til alle distrikter af CLF"
+          ><img src="/public/img/kunst.webp" alt="xxx" /></Card_guidet
+        >
+        <Card_guidet text="Liveguidet kanalrundfart langs kunstværkerne"
+          ><img src="/public/img/kunst.webp" alt="xxx" /></Card_guidet
+        >
+        <Card_guidet
+          text="Guidet tur til fods med Frederik Lindskov og FOF Nordsjælland"
+          ><img src="/public/img/kunst.webp" alt="xxx" /></Card_guidet
         >
       </section>
     </main>
+    <footer>
+      <Footer />
+    </footer>
   </body>
   <script
     defer

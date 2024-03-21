@@ -13,27 +13,69 @@
   src: url(/FONT/InterTight-ExtraBold.ttf);
 }
 
+@font-face {
+  font-family: RobB;
+  src: url(/FONT/Roboto-Black.ttf);
+}
+
 body {
   background: #010d25;
   background-image:url(/public/img/baggrundimgab.webp);
   background-size: 100%;
+  margin: 3%;
 }
 
 h1 {
-  color: #fff8d2;
-  -webkit-text-stroke: 0.02rem;
+  color: #FFF8D2;
+  -webkit-text-stroke: 0.06rem;
   -webkit-text-fill-color: transparent;
-  text-align: center;
-  font-family: RobR;
+  font-family: RobB;
   line-height: 2;
+  margin-bottom: 0;
 }
 
 h2 {
   color: #fff8d2;
+  text-align: left;
+  font-family: RobB;
+  -webkit-text-stroke: 0.06rem;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  margin-bottom: 10px;
+
 }
 
 h3 {
   color: #b2b8eb; 
+  margin-top: 0;
+  font-family: RobL;
+  font-size: 15px;
+  margin-top: 0;
+}
+
+p {
+  color: #fff8d2;
+  font-family: RobL;
+  line-height: 2;
+
+}
+
+img {
+  max-width: 300px;
+  max-height: 400px;
+}
+
+.propic {
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+.propic img {
+  max-width: 400px;
+  max-height: 500px;
 }
 
 /*events*/
@@ -56,7 +98,8 @@ h3 {
   border-style:double;
   border-width:5px;
   border-color: #fff8d2;
-  margin: 20px;
+  margin: 30px;
+  margin-right: 0;
 }
 
 /*mapssidens google-maps-api*/
@@ -66,6 +109,7 @@ h3 {
   height: 500px;
   align-self: center;
   margin: 0 auto;
+
 }
 
 .clfinfo h3 {
@@ -83,7 +127,50 @@ h3 {
 }
 
 #routes {
+  font-family: RobB;
   color: #fff8d2;
+  font-size: 30px;
   padding: 15px;
   margin: 1px;
 }
+
+.gridguide {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 60px;
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+
+
+ .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+  }
+
+  .propic {
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  .propic a {
+    text-decoration: none;
+  }
+
+
+  .propic a:hover {
+    
+    color: #fff8d2;
+    text-decoration:underline;
+  }
+
+  .img propic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  }

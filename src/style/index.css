@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 img {
   max-width: 300px;
   max-height: 400px;
@@ -63,24 +67,6 @@ body::before {
   width: 100%
 }
 
-@font-face {
-  font-family: RobR;
-  src: url(/FONT/Roboto-Regular.ttf);
-}
-@font-face {
-  font-family: RobL;
-  src: url(/FONT/Roboto-Light.ttf);
-}
-@font-face {
-  font-family: inter;
-  src: url(/FONT/InterTight-Bold.ttf);
-}
-
-p {
-  font-family: RobL;
-  line-height: 2;
-}
-
 .dato {
   font-family: RobL;
   line-height: 2;
@@ -88,29 +74,14 @@ p {
   text-align: center;
 }
 h1 {
-  color: #fff8d2;
-  -webkit-text-stroke: 0.05rem;
-  -webkit-text-fill-color: transparent;
   text-align: center;
-  font-family: inter;
-  line-height: 2;
-  font-size: 32px;
 }
 
-h2 {
-  color: #fff8d2;
-  text-align: left;
-  font-family: RobR;
-  line-height: 2;
-  font-size: 20px;
-}
-p {
-  color: #fff8d2;
-}
 .body-index {
   background: #010d25;
-  background-image: url(/public/IMG/baggrund2.webp);
+  background-image: url(/public/img/baggrund2.webp);
   background-size: 100%;
+
 }
 /* desktop */
 @media (min-width: 600px) {
