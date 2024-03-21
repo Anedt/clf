@@ -31,7 +31,7 @@ img {
 }
 
 /* body {
-  background-image: url(/IMG/baggrund.webp);
+  background-image: url(/img/baggrund.webp);
   position: relative;
 }
 body::before {
@@ -86,7 +86,7 @@ h1 {
 
 .body-index {
   background: #010d25;
-  background-image: url(/public/img/baggrund2.webp);
+  background-image: url(/img/baggrund2.webp);
   background-size: 100%;
 }
 /* desktop */
